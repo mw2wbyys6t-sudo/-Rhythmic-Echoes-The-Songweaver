@@ -1,57 +1,50 @@
-# React + TypeScript + Vite
+# 律歌回响：鸣歌者 (Rhythmic Echoes: The Songweaver)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+一款融合音乐节奏与roguelike元素的僵尸射击游戏。在音乐的节拍中战斗，用歌声的力量征服一切！
 
-Currently, two official plugins are available:
+## 游戏特色
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🎵 **音乐节拍战斗系统** - 根据音乐的节拍进行攻击，获得额外伤害加成
+- 🧟 **roguelike元素** - 随机生成的关卡、敌人和Boss
+- 🎮 **7种独特武器** - 音乐手枪、节拍喷子、电吉他、节奏步枪、旋律狙击、摇滚火箭炮、激光琴
+- ✨ **10种技能** - 音浪风暴、节奏治愈、时间停止、黑洞引力等
+- 👤 **角色自定义** - 性别、发型、服装、肤色、声线、语言等
+- 🌍 **多语言支持** - 中文、English、日本語
 
-## Expanding the ESLint configuration
+## 技术栈
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **前端框架**: React 18 + TypeScript
+- **构建工具**: Vite
+- **样式**: Tailwind CSS
+- **状态管理**: Zustand
+- **游戏引擎**: 原生Canvas 2D
+- **音效**: Howler.js
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 开始游戏
+
+```bash
+# 安装依赖
+npm install
+
+# 启动开发服务器
+npm run dev
+
+# 构建生产版本
+npm run build
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 游戏操作
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **WASD / 方向键**: 移动角色
+- **鼠标点击 / 触摸射击**: 发射子弹
+- **Q, E, R, F, G, H**: 释放技能
+- **1-7**: 切换武器
+- **P**: 暂停游戏
 
-export default tseslint.config({
-  extends: [
-    // other configs...
-    // Enable lint rules for React
-    reactX.configs['recommended-typescript'],
-    // Enable lint rules for React DOM
-    reactDom.configs.recommended,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 游戏截图
+
+游戏截图请查看 `screenshots/` 目录。
+
+## License
+
+MIT
